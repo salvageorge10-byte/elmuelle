@@ -1,0 +1,26 @@
+<!-- Carta – El Muelle | Hamburguesas simples, dobles y triples, veggies, milanesas, entradas, cervezas y tragos. | assets/js/carta-datos.js, assets/js/carta.js -->
+    <section class="pagina-hero pagina-hero--carta" style="--fondo:url('assets/img/carrusel-5.webp')">
+      <div class="contenedor">
+        <span class="etiqueta" data-anim="fadeInUp">Sabor genuino, sin vueltas</span>
+        <h1 class="titulo-rudo pagina-hero__titulo" data-anim="fadeInUp">Carta</h1>
+        <p data-anim="fadeInUp">Todo lo que ves acá está hecho con ingredientes de primera, pan de receta propia, sin conservantes y con combinaciones que dan ganas de probar. Elegí tu próxima hamburguesa favorita y dejate sorprender.</p>
+      </div>
+    </section>
+
+    <div class="carta-panel">
+      <div class="buscador contenedor" data-anim="fadeInUp">
+        <div class="buscador__campo">
+          <label for="buscar" class="buscador__titulo">Buscador</label>
+          <input id="buscar" type="search" placeholder="Buscá una hamburguesa o un trago…" autocomplete="off">
+        </div>
+        <div class="buscador__categorias">
+          <button type="button" class="buscador__boton" aria-expanded="false" aria-controls="lista-categorias">Categorías <i class="fa-solid fa-caret-down" aria-hidden="true"></i></button>
+          <ul id="lista-categorias" class="buscador__lista" hidden></ul>
+        </div>
+      </div>
+
+      <div class="contenedor" id="carta-productos">
+        <noscript><p>Para ver la carta necesitás tener JavaScript activado.</p></noscript>
+      </div>
+      <p class="carta-vacia contenedor" hidden>No encontramos nada con esa búsqueda. Probá con otra palabra, por ejemplo «cheddar» o «milanesa».</p>
+    </div>

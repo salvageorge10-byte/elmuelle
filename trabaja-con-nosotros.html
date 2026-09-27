@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trabajá con nosotros – El Muelle</title>
+  <meta name="description" content="Dejanos tus datos y tu CV para futuras búsquedas.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,500;6..12,600;6..12,700;6..12,800&family=Permanent+Marker&family=Rubik+Dirt&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body id="arriba">
+
+  <header class="cabecera">
+    <div class="cabecera__fila contenedor">
+      <a href="index.html" class="logo logo--cabecera" aria-label="El Muelle, inicio">
+        <i class="fa-solid fa-anchor logo__ancla" aria-hidden="true"></i>
+        <span class="logo__nombre" aria-hidden="true"><small>El</small>Muelle</span>
+      </a>
+      <ul class="redes" aria-label="Redes sociales">
+        <li><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a></li>
+        <li><a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a></li>
+        <li><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a></li>
+      </ul>
+      <button class="menu-boton" aria-expanded="false" aria-controls="navegacion" aria-label="Abrir menú">
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+      </button>
+    </div>
+    <nav id="navegacion" class="navegacion contenedor" aria-label="Principal">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="carta.html">Carta</a></li>
+        <li><a href="franquicias.html">Franquicias</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="prensa.html">Prensa</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="bloque-formulario bloque-formulario--pagina">
+      <div class="contenedor">
+        <span class="etiqueta etiqueta--suave" data-anim="fadeInUp">Una oportunidad única</span>
+        <h1 class="titulo titulo--grande titulo--claro" data-anim="fadeInUp">Trabajá con nosotros</h1>
+        <p class="bloque-formulario__bajada" data-anim="fadeInUp">Dejanos tus datos para las próximas búsquedas.</p>
+        <div class="tarjeta-formulario">
+          <form class="formulario" data-formulario="empleo" novalidate>
+            <div class="formulario__fila">
+              <div class="campo"><input id="t-nombre" name="nombre" required placeholder=" " autocomplete="given-name"><label for="t-nombre">Nombre *</label></div>
+              <div class="campo"><input id="t-apellido" name="apellido" placeholder=" " autocomplete="family-name"><label for="t-apellido">Apellido</label></div>
+            </div>
+            <div class="formulario__fila">
+              <div class="campo"><input id="t-email" name="email" type="email" required placeholder=" " autocomplete="email"><label for="t-email">Email *</label></div>
+              <div class="campo"><input id="t-telefono" name="telefono" type="tel" required placeholder=" " autocomplete="tel"><label for="t-telefono">Teléfono *</label></div>
+            </div>
+            <div class="formulario__fila formulario__fila--3">
+              <div class="campo"><input id="t-conocio" name="como_nos_conocio" required placeholder=" "><label for="t-conocio">¿Cómo nos conociste? *</label></div>
+              <div class="campo"><input id="t-vive" name="donde_vive" required placeholder=" "><label for="t-vive">¿Dónde vivís? *</label></div>
+              <div class="campo"><input id="t-ocupacion" name="ocupacion" required placeholder=" "><label for="t-ocupacion">Ocupación *</label></div>
+            </div>
+            <div class="campo"><input id="t-puesto" name="puesto" placeholder=" "><label for="t-puesto">¿A qué puesto te postulás?</label></div>
+            <div class="campo campo--area">
+              <span class="campo__contador" aria-live="polite">0 / 180</span>
+              <textarea id="t-porque" name="por_que" maxlength="180" placeholder=" "></textarea>
+              <label for="t-porque">¿Por qué te gustaría trabajar con nosotros?</label>
+            </div>
+            <div class="campo-archivo">
+              <span class="campo-archivo__titulo">Subí tu CV</span>
+              <label class="campo-archivo__boton" for="t-cv">Elegir archivo</label>
+              <input id="t-cv" name="cv" type="file" accept=".pdf,.doc,.docx">
+              <span class="campo-archivo__nombre" aria-live="polite">No elegiste ningún archivo</span>
+            </div>
+            <button type="submit" class="formulario__enviar">Enviar</button>
+            <p class="formulario__estado" role="status" hidden></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <section class="leyenda">
+    <div class="contenedor">
+      <h2 class="titulo-rudo titulo-rudo--versalitas">El Origen de la Hamburguesa</h2>
+      <p>Desde el sur, un puñado de inconformistas del sabor se animó a cambiar las reglas.<br>Con fuego en el pecho y ganas de hacer algo auténtico, crearon hamburguesas como ninguna otra.<br>Hoy esa misión sigue en marcha.</p>
+      <a href="trabaja-con-nosotros.html" class="boton boton--claro boton--redondeado">Sumate a la tripulación →</a>
+    </div>
+  </section>
+
+  <footer class="pie">
+    <div class="contenedor">
+      <span class="logo logo--pie flota-hover" role="img" aria-label="El Muelle">
+        <i class="fa-solid fa-anchor logo__ancla" aria-hidden="true"></i>
+        <span class="logo__nombre" aria-hidden="true"><small>El</small>Muelle</span>
+      </span>
+      <p class="pie__bajada">Nos gusta ofrecer una experiencia gastronómica distinta, donde el producto, el lugar y la atención van de la mano.<br>Gracias a quienes nos eligen, seguimos creciendo con el mismo sabor de siempre.<br>¡Vení y sumate a nuestra historia!</p>
+
+      <div class="pie__columnas">
+        <div class="pie__col">
+          <h2>Navegación</h2>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="carta.html">Carta</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="prensa.html">Prensa</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="pie__col">
+          <h2>Información</h2>
+          <ul>
+            <li><a href="franquicias.html">Sumate a la franquicia</a></li>
+            <li><a href="trabaja-con-nosotros.html">Trabajá con nosotros</a></li>
+            <li><a href="nosotros.html#marcas">Sobre Smash Co.</a></li>
+            <li><a href="nosotros.html#marcas">Sobre Papas &amp; Go</a></li>
+          </ul>
+          <ul class="redes redes--pie" aria-label="Redes sociales">
+            <li><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a></li>
+        <li><a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a></li>
+        <li><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a></li>
+          </ul>
+        </div>
+        <div class="pie__marcas">
+          <div class="pie__marcas-logos" aria-hidden="true">
+            <span class="submarca submarca--smash">Smash<br>Co.</span>
+            <span class="submarca submarca--papas">Papas<br>&amp; Go</span>
+          </div>
+          <p>Nuestro grupo gastronómico suma marcas que comparten la misma pasión por la comida bien hecha.</p>
+        </div>
+      </div>
+    </div>
+    <div class="pie__legal contenedor">© Copyright El Muelle / <a href="privacidad.html">Política de privacidad y cookies</a></div>
+  </footer>
+
+  <a href="#arriba" class="arriba" aria-label="Volver arriba"><i class="fa-solid fa-chevron-up" aria-hidden="true"></i></a>
+
+  <script src="main.js"></script>
+</body>
+</html>

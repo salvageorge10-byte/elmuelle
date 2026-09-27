@@ -1,0 +1,39 @@
+<!-- Trabajá con nosotros – El Muelle | Dejanos tus datos y tu CV para futuras búsquedas. -->
+    <section class="bloque-formulario bloque-formulario--pagina">
+      <div class="contenedor">
+        <span class="etiqueta etiqueta--suave" data-anim="fadeInUp">Una oportunidad única</span>
+        <h1 class="titulo titulo--grande titulo--claro" data-anim="fadeInUp">Trabajá con nosotros</h1>
+        <p class="bloque-formulario__bajada" data-anim="fadeInUp">Dejanos tus datos para las próximas búsquedas.</p>
+        <div class="tarjeta-formulario">
+          <form class="formulario" data-formulario="empleo" novalidate>
+            <div class="formulario__fila">
+              <div class="campo"><input id="t-nombre" name="nombre" required placeholder=" " autocomplete="given-name"><label for="t-nombre">Nombre *</label></div>
+              <div class="campo"><input id="t-apellido" name="apellido" placeholder=" " autocomplete="family-name"><label for="t-apellido">Apellido</label></div>
+            </div>
+            <div class="formulario__fila">
+              <div class="campo"><input id="t-email" name="email" type="email" required placeholder=" " autocomplete="email"><label for="t-email">Email *</label></div>
+              <div class="campo"><input id="t-telefono" name="telefono" type="tel" required placeholder=" " autocomplete="tel"><label for="t-telefono">Teléfono *</label></div>
+            </div>
+            <div class="formulario__fila formulario__fila--3">
+              <div class="campo"><input id="t-conocio" name="como_nos_conocio" required placeholder=" "><label for="t-conocio">¿Cómo nos conociste? *</label></div>
+              <div class="campo"><input id="t-vive" name="donde_vive" required placeholder=" "><label for="t-vive">¿Dónde vivís? *</label></div>
+              <div class="campo"><input id="t-ocupacion" name="ocupacion" required placeholder=" "><label for="t-ocupacion">Ocupación *</label></div>
+            </div>
+            <div class="campo"><input id="t-puesto" name="puesto" placeholder=" "><label for="t-puesto">¿A qué puesto te postulás?</label></div>
+            <div class="campo campo--area">
+              <span class="campo__contador" aria-live="polite">0 / 180</span>
+              <textarea id="t-porque" name="por_que" maxlength="180" placeholder=" "></textarea>
+              <label for="t-porque">¿Por qué te gustaría trabajar con nosotros?</label>
+            </div>
+            <div class="campo-archivo">
+              <span class="campo-archivo__titulo">Subí tu CV</span>
+              <label class="campo-archivo__boton" for="t-cv">Elegir archivo</label>
+              <input id="t-cv" name="cv" type="file" accept=".pdf,.doc,.docx">
+              <span class="campo-archivo__nombre" aria-live="polite">No elegiste ningún archivo</span>
+            </div>
+            <button type="submit" class="formulario__enviar">Enviar</button>
+            <p class="formulario__estado" role="status" hidden></p>
+          </form>
+        </div>
+      </div>
+    </section>
