@@ -3,225 +3,298 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>El Muelle – El origen de las hamburguesas</title>
-  <meta name="description" content="Hamburguesas artesanales de autor. Conocé nuestra carta, nuestra historia y cómo sumarte a la franquicia.">
+  <title>El Muelle – Hamburguesas smash, papas y cerveza tirada</title>
+  <meta name="description" content="Hamburguesería artesanal: smash dobles y triples, milanesas, papas cortadas en casa y cerveza tirada. Conocé la carta y la franquicia.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,500;6..12,600;6..12,700;6..12,800&family=Permanent+Marker&family=Rubik+Dirt&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700;6..12,800&family=Permanent+Marker&family=Rubik+Dirt&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body id="arriba">
+<body id="arriba" class="pagina-index">
 
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
   <header class="cabecera">
-    <div class="cabecera__fila contenedor">
+    <div class="contenedor cabecera__fila">
       <a href="index.html" class="logo logo--cabecera" aria-label="El Muelle, inicio">
         <i class="fa-solid fa-anchor logo__ancla" aria-hidden="true"></i>
-        <span class="logo__nombre" aria-hidden="true"><small>El</small>Muelle</span>
+        <span class="logo__nombre"><small>El</small>Muelle</span>
       </a>
-      <ul class="redes" aria-label="Redes sociales">
-        <li><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a></li>
-        <li><a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a></li>
-        <li><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
-        <li><a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a></li>
+      <ul class="redes cabecera__redes" aria-label="Redes sociales">
+          <li><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a></li>
+          <li><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+          <li><a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a></li>
       </ul>
       <button class="menu-boton" aria-expanded="false" aria-controls="navegacion" aria-label="Abrir menú">
-        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+        <span></span><span></span><span></span>
       </button>
     </div>
-    <nav id="navegacion" class="navegacion contenedor" aria-label="Principal">
-      <ul>
-        <li><a href="index.html" aria-current="page">Inicio</a></li>
-        <li><a href="nosotros.html">Nosotros</a></li>
-        <li><a href="carta.html">Carta</a></li>
-        <li><a href="franquicias.html">Franquicias</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="prensa.html">Prensa</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
+    <nav id="navegacion" class="navegacion" aria-label="Principal">
+      <ul class="contenedor">
+          <li><a href="index.html" aria-current="page">Inicio</a></li>
+          <li><a href="carta.html">Carta</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="franquicias.html">Franquicias</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="prensa.html">Prensa</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
-    <!-- HERO -->
-    <section class="hero">
-      <div class="hero__grilla contenedor">
-        <div class="hero__marca" data-anim="fadeInLeft" data-anim-mobile="fadeInUp">
-          <span class="logo logo--hero flota-hover" role="img" aria-label="El Muelle">
+  <main id="contenido">
+    <!-- HÉROE -->
+    <section class="portada" style="--fondo:url('assets/img/m-muelle-sogas.jpg')">
+      <div class="contenedor portada__grilla">
+        <div class="portada__marca" data-anim="fadeInLeft" data-anim-mobile="fadeInUp">
+          <span class="logo logo--portada flota-hover" role="img" aria-label="El Muelle">
             <i class="fa-solid fa-anchor logo__ancla" aria-hidden="true"></i>
             <span class="logo__nombre" aria-hidden="true"><small>El</small>Muelle</span>
           </span>
         </div>
-        <div class="hero__texto" data-anim="fadeInRight" data-anim-mobile="fadeInUp">
-          <span class="etiqueta">Hamburguesas artesanales de autor</span>
-          <h1 class="titulo-rudo">El origen de las hamburguesas</h1>
-          <p>Nos gusta ofrecer una experiencia gastronómica distinta, donde el producto, el lugar y la atención van de la mano. Gracias a quienes nos eligen, seguimos creciendo sin perder el sabor de siempre. ¡Vení y sumate a nuestra historia!</p>
-          <a href="nosotros.html" class="boton boton--claro">Quiénes somos →</a>
+        <div class="portada__texto" data-anim="fadeInRight" data-anim-mobile="fadeInUp">
+          <p class="portada__rotulo">Hamburguesería artesanal</p>
+          <h1 class="portada__titulo">El hambre<br>tiene puerto.</h1>
+          <p class="portada__bajada">Smash aplastadas en la plancha, papas cortadas en casa y cerveza tirada. Burgers, papas y un buen rato.</p>
+          <a href="carta.html" class="enlace-flecha">Ver la carta</a>
         </div>
       </div>
     </section>
 
-    <!-- CARRUSEL -->
-    <div class="carrusel" data-anim="fadeInUp" aria-label="Fotos de nuestras hamburguesas">
-      <div class="carrusel__pista">
-        <img src="assets/img/carrusel-5.webp" alt="Hamburguesa doble con cheddar, sostenida sobre una bandeja de papas" width="280" height="420">
-        <img src="assets/img/carrusel-4.webp" alt="Hamburguesa y dos cervezas en una mesa de madera" width="280" height="420">
-        <img src="assets/img/carrusel-3.webp" alt="Hamburguesa con panceta y cheddar sobre papas fritas" width="280" height="420">
-        <img src="assets/img/carrusel-1.webp" alt="Hamburguesa con morrones asados y dos pintas de cerveza roja" width="280" height="420">
-        <img src="assets/img/carrusel-2.webp" alt="Hamburguesa con papas y nuggets de acompañamiento" width="280" height="420">
+    <!-- TIRA DE FOTOS -->
+    <div class="tira" data-anim="fadeInUp" aria-label="Fotos de la carta">
+      <div class="tira__pista">
+        <img src="assets/img/b-cesta-roja.jpg" alt="Hamburguesa con cheddar en canasta roja con papas" width="1024" height="1024">
+        <img src="assets/img/b-brioche-papas.jpg" alt="Hamburguesa en pan brioche con papas fritas" width="1024" height="768">
+        <img src="assets/img/p-cargadas.jpg" alt="Papas cargadas con carne desmechada y verdeo" width="1024" height="683">
+        <img src="assets/img/c-rubia.jpg" alt="Pinta de cerveza rubia sobre una mesa de madera" width="768" height="1024">
+        <img src="assets/img/b-bacon-oscura.jpg" alt="Hamburguesa con panceta crocante y ketchup" width="1024" height="768">
+        <img src="assets/img/b-huevo.jpg" alt="Hamburguesa con huevo de yema blanda" width="768" height="1024">
+        <img src="assets/img/p-montana.jpg" alt="Montaña de papas fritas" width="1024" height="683">
+        <img src="assets/img/b-jalapenos.jpg" alt="Hamburguesa con jalapeños y cebolla, con papas" width="1024" height="680">
       </div>
     </div>
 
-    <!-- CIFRAS -->
-    <section class="cifras">
-      <div class="contenedor cifras__cabecera">
-        <span class="etiqueta" data-anim="fadeInUp">Una franquicia que no para de crecer</span>
-        <h2 class="titulo" data-anim="fadeInUp">Nuestra historia en cifras</h2>
-        <p class="bajada" data-anim="fadeInUp">Lo que hicimos también se puede medir. Estos son nuestros números… y todavía vamos por más.</p>
+    <!-- CUATRO MUELLES -->
+    <section class="muelles" id="muelles">
+      <div class="contenedor">
+        <header class="encabezado encabezado--doble">
+          <div data-anim="fadeInUp">
+            <p class="rotulo">La carta, por muelle</p>
+            <h2 class="titulo">Elegí por dónde<br>desembarcar</h2>
+          </div>
+          <p class="encabezado__bajada" data-anim="fadeInUp">Cuatro sectores, más de cien opciones. Desde la simple con cheddar hasta la triple con huevo, pasando por milanesas al plato y una barra con canillas propias.</p>
+        </header>
+        <div class="muelles__grilla">
+          <a href="carta.html#simples" class="muelle muelle--grande" data-anim="fadeInLeft" data-anim-mobile="fadeInUp">
+            <img src="assets/img/b-cheddar-derretido.jpg" alt="Hamburguesa smash con cheddar derretido y mostaza" loading="lazy" width="1024" height="841">
+            <span class="muelle__cartel"><span class="muelle__letra">A</span><span class="muelle__nombre">Smash</span><span class="muelle__dato">Simples, dobles y triples</span></span>
+          </a>
+          <a href="carta.html#veggies" class="muelle" data-anim="fadeInUp">
+            <img src="assets/img/b-caja-roja.jpg" alt="Hamburguesa con lechuga y tomate en caja roja con papas" loading="lazy" width="1024" height="683">
+            <span class="muelle__cartel"><span class="muelle__letra">B</span><span class="muelle__nombre">Veggies y sin TACC</span><span class="muelle__dato">Medallones vegetales</span></span>
+          </a>
+          <a href="carta.html#milanesas-de-pollo" class="muelle" data-anim="fadeInUp">
+            <img src="assets/img/o-pollo-2.jpg" alt="Sándwich de pollo crocante en pan de papa" loading="lazy" width="1024" height="768">
+            <span class="muelle__cartel"><span class="muelle__letra">C</span><span class="muelle__nombre">Milanesas y pollo</span><span class="muelle__dato">Al plato o en sándwich</span></span>
+          </a>
+          <a href="carta.html#cerveza" class="muelle muelle--ancho" data-anim="fadeInRight" data-anim-mobile="fadeInUp">
+            <img src="assets/img/c-canillas-fila.jpg" alt="Fila de canillas de cerveza de bronce" loading="lazy" width="1023" height="770">
+            <span class="muelle__cartel"><span class="muelle__letra">D</span><span class="muelle__nombre">La barra</span><span class="muelle__dato">Cerveza tirada, latas y tragos</span></span>
+          </a>
+        </div>
       </div>
-      <!-- Cifras del sitio original: reemplazar por las de la marca nueva (ver PENDIENTES.md) -->
-      <ul class="cifras__grilla" data-anim="fadeInUp">
-        <li>
-          <span class="cifras__icono"><i class="fa-solid fa-store" aria-hidden="true"></i></span>
-          <h3>50 locales</h3>
-          <p>Y cada año se suman más franquicias.</p>
-        </li>
-        <li>
-          <span class="cifras__icono"><i class="fa-solid fa-burger" aria-hidden="true"></i></span>
-          <h3>700.456 hamburguesas</h3>
-          <p>Servidas cada año. Miles vuelven por nuestro sabor todos los días.</p>
-        </li>
-        <li>
-          <span class="cifras__icono"><i class="fa-solid fa-industry" aria-hidden="true"></i></span>
-          <h3>Producción propia</h3>
-          <p>Un centro de elaboración que abastece a cada local.</p>
-        </li>
-        <li>
-          <span class="cifras__icono"><i class="fa-solid fa-user-check" aria-hidden="true"></i></span>
-          <h3>97% de satisfacción</h3>
-          <p>Quienes nos visitan nos recomiendan.</p>
-        </li>
-        <li>
-          <span class="cifras__icono"><i class="fa-solid fa-box" aria-hidden="true"></i></span>
-          <h3>504.007 pedidos al año</h3>
-          <p>A través de apps de delivery.</p>
-        </li>
-        <li>
-          <span class="cifras__icono"><i class="fa-solid fa-user-check" aria-hidden="true"></i></span>
-          <h3>+1,5M de seguidores</h3>
-          <p>¡En todas nuestras redes!</p>
-        </li>
-      </ul>
     </section>
 
-    <!-- HISTORIA -->
-    <section class="historia">
-      <div class="historia__foto" style="background-image:url('assets/img/historia-izquierda.webp')" role="img" aria-label="Manos sosteniendo una hamburguesa triple con panceta, junto a papas y una cerveza" data-anim="fadeInLeft" data-anim-mobile="fadeInUp"></div>
-      <div class="historia__centro" data-anim="fadeInUp">
-        <span class="logo logo--historia flota-hover" role="img" aria-label="El Muelle" data-anim="fadeInUp" data-anim-mobile="none">
-          <i class="fa-solid fa-anchor logo__ancla" aria-hidden="true"></i>
-          <span class="logo__nombre" aria-hidden="true"><small>El</small>Muelle</span>
-        </span>
-        <p data-anim="fadeInUp" data-anim-mobile="none">En 2017, con el coraje de un capitán y el respaldo de su tripulación, alguien decidió izar las velas y crear algo realmente épico: una hamburguesería que no iba a servir solo comida, sino toda una experiencia, una explosión de sabores a la altura de los grandes banquetes. Ese lugar se volvió puerto seguro para todos los que buscaban algo diferente, algo genuino.</p>
+    <!-- CÓMO LA HACEMOS -->
+    <section class="oficio" style="--fondo:url('assets/img/k-plancha.jpg')">
+      <div class="contenedor">
+        <header class="encabezado encabezado--claro">
+          <p class="rotulo rotulo--amarillo" data-anim="fadeInUp">Cómo la hacemos</p>
+          <h2 class="titulo titulo--claro" data-anim="fadeInUp">Tres cosas que<br>no negociamos</h2>
+        </header>
+        <ol class="oficio__lista">
+          <li class="oficio__item" data-anim="fadeInLeft" data-anim-mobile="fadeInUp">
+            <img src="assets/img/k-smash-plancha.jpg" alt="Dos bollos de carne aplastados sobre la plancha" loading="lazy" width="768" height="1024">
+            <div>
+              <h3>La carne, aplastada</h3>
+              <p>Bollos de carne fresca que se aplastan contra la plancha bien caliente. Así se forma la costra dorada que le da el sabor a una smash.</p>
+            </div>
+          </li>
+          <li class="oficio__item" data-anim="fadeInUp">
+            <img src="assets/img/k-panes.jpg" alt="Panes de hamburguesa con sésamo recién horneados" loading="lazy" width="1024" height="683">
+            <div>
+              <h3>El pan, del día</h3>
+              <p>Pan de papa blando por dentro y tostado en la plancha, para que aguante el jugo sin desarmarse.</p>
+            </div>
+          </li>
+          <li class="oficio__item" data-anim="fadeInRight" data-anim-mobile="fadeInUp">
+            <img src="assets/img/k-ingredientes.jpg" alt="Tabla con carne, panceta, queso, tomate, lechuga y cebolla" loading="lazy" width="1023" height="682">
+            <div>
+              <h3>Lo demás, casero</h3>
+              <p>Salsas hechas en la cocina, cebolla caramelizada a fuego lento y papas que cortamos todos los días.</p>
+            </div>
+          </li>
+        </ol>
       </div>
-      <div class="historia__foto" style="background-image:url('assets/img/historia-derecha.webp')" role="img" aria-label="Canillas de cerveza tirada frente a una pared verde con el logo del local" data-anim="fadeInRight" data-anim-mobile="fadeInUp"></div>
     </section>
 
-    <!-- CARTA -->
-    <section class="carta contenedor">
-      <div class="carta__texto" data-anim="fadeInUp">
-        <span class="etiqueta">Una opción para cada antojo</span>
-        <h2 class="titulo">Nuestra carta</h2>
-        <p>Cada plato también cuenta nuestra historia.<br>Queremos ser la hamburguesería artesanal de referencia, llevando nuestro sabor genuino y una calidad sin vueltas a cada mesa, y formando una comunidad que comparte la pasión por lo que cocinamos.</p>
-        <a href="carta.html" class="boton boton--oscuro">Ver la carta →</a>
-      </div>
-      <div class="carta__foto" data-anim="fadeInRight" data-anim-mobile="fadeInUp">
-        <img class="flota-hover" src="assets/img/menu-foto.webp" alt="Hamburguesa doble con pepinos, cheddar y lechuga, pinchada con un palillo" width="550" height="825" loading="lazy">
+    <!-- MANIFIESTO -->
+    <section class="manifiesto">
+      <div class="contenedor manifiesto__grilla">
+        <figure class="manifiesto__fotos" data-anim="fadeInLeft" data-anim-mobile="fadeInUp">
+          <img class="manifiesto__foto-a" src="assets/img/l-barra.jpg" alt="Barra de madera iluminada con lámparas colgantes" loading="lazy" width="1024" height="768">
+          <img class="manifiesto__foto-b flota" src="assets/img/c-canillas-cobre.jpg" alt="Canillas de cerveza sobre un barril de cobre" loading="lazy" width="1023" height="685">
+        </figure>
+        <div class="manifiesto__texto" data-anim="fadeInRight" data-anim-mobile="fadeInUp">
+          <p class="rotulo">Manifiesto de carga</p>
+          <h2 class="titulo">Lo que movemos<br>en un año</h2>
+          <p class="parrafo">Empezamos con una plancha y una idea. Esto es lo que hay hoy en la bodega.</p>
+          <!-- Cifras de muestra: reemplazar por las reales de la marca (ver PENDIENTES.md) -->
+          <table class="manifiesto__tabla">
+            <caption class="visualmente-oculto">Cifras de la marca</caption>
+            <tbody>
+              <tr><th scope="row">Locales franquiciados</th><td>50</td></tr>
+              <tr><th scope="row">Hamburguesas servidas por año</th><td>700.456</td></tr>
+              <tr><th scope="row">Pedidos por apps de delivery</th><td>504.007</td></tr>
+              <tr><th scope="row">Clientes que nos recomiendan</th><td>97 %</td></tr>
+              <tr><th scope="row">Seguidores en redes</th><td>+1,5 M</td></tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </section>
 
     <!-- FRANQUICIA -->
-    <section class="franquicia">
-      <div class="franquicia__texto contenedor" data-anim="fadeInUp">
-        <h2 class="titulo-rudo">Sumá tu propia franquicia<br>a partir de hoy</h2>
-        <p>Desde el sur, un puñado de inconformistas del sabor se animó a cambiar las reglas.<br>Con fuego en el pecho y ganas de hacer algo auténtico, crearon hamburguesas como ninguna otra.<br>Hoy esa misión sigue en marcha.</p>
-        <a href="franquicias.html" class="boton boton--claro">Quiero mi propia franquicia →</a>
+    <section class="banda-franquicia" style="--fondo:url('assets/img/m-soga-4.jpg')">
+      <div class="contenedor banda-franquicia__grilla">
+        <div class="banda-franquicia__texto" data-anim="fadeInLeft" data-anim-mobile="fadeInUp">
+          <p class="rotulo rotulo--tinta">Franquicias</p>
+          <h2 class="titulo titulo--claro">Amarrá tu propio<br>muelle</h2>
+          <p class="parrafo parrafo--claro">Te damos la receta, la marca, la capacitación y el abastecimiento. Vos ponés las ganas de atender bien a la gente.</p>
+          <ol class="pasos-cortos">
+            <li><span>1</span> Charla inicial y visita a un local</li>
+            <li><span>2</span> Plan de inversión y elección de zona</li>
+            <li><span>3</span> Capacitación, obra y apertura</li>
+          </ol>
+          <a href="franquicias.html" class="boton boton--tinta">Ver cómo funciona</a>
+        </div>
+        <div class="banda-franquicia__foto" data-anim="fadeInUp">
+          <img class="flota" src="assets/img/g-hamburguesa.jpg" alt="Cliente sonriendo frente a una hamburguesa con papas" loading="lazy" width="1023" height="796">
+        </div>
       </div>
     </section>
-    <div class="fotos-trio">
-      <div class="fotos-trio__lado fotos-trio__lado--izq" style="background-image:url('assets/img/franquicia-izquierda.webp')" role="img" aria-label="Milanesa con cheddar, panceta y cebolla de verdeo, con papas fritas" data-anim="fadeInLeft" data-anim-mobile="fadeInUp"></div>
-      <div class="fotos-trio__centro-wrap" data-anim="fadeInUp">
-        <div class="fotos-trio__centro" style="background-image:url('assets/img/franquicia-centro.webp')" role="img" aria-label="Salvavidas naranja colgado en una red, parte de la decoración del local"></div>
-      </div>
-      <div class="fotos-trio__lado fotos-trio__lado--der" style="background-image:url('assets/img/franquicia-derecha.webp')" role="img" aria-label="Pinta de cerveza rubia servida frente a la barra de canillas" data-anim="fadeInRight" data-anim-mobile="fadeInUp"></div>
-    </div>
 
-    <!-- OPINIONES -->
-    <section class="opiniones contenedor">
-      <span class="etiqueta etiqueta--suave" data-anim="fadeInUp">Opiniones de nuestros clientes</span>
-      <h2 class="titulo" data-anim="fadeInUp">Lo que dicen quienes vienen</h2>
-      <p class="bajada" data-anim="fadeInUp">Cada hamburguesa tiene su historia, y nada nos pone más contentos que ver cómo esas historias se cuentan. Estas son algunas de las experiencias de quienes nos visitan todos los días.</p>
-      <!-- Acá va el widget de reseñas de Google de la marca (en el original es Trustindex) -->
-      <div class="opiniones__widget" data-anim="fadeInUp"></div>
+    <!-- MOSAICO -->
+    <section class="mosaico">
+      <div class="contenedor">
+        <header class="encabezado encabezado--doble">
+          <div data-anim="fadeInUp">
+            <p class="rotulo">Del muelle a la mesa</p>
+            <h2 class="titulo">Así sale<br>de la cocina</h2>
+          </div>
+          <p class="encabezado__bajada" data-anim="fadeInUp">Nada de fotos de estudio: esto es lo que llega a la mesa un día cualquiera, con las papas desparramadas y el cheddar chorreando.</p>
+        </header>
+        <ul class="mosaico__grilla">
+          <li class="m1" data-anim="fadeInLeft" data-anim-mobile="fadeInUp"><img src="assets/img/b-aros.jpg" alt="Hamburguesa con aros de cebolla al costado" loading="lazy"></li>
+          <li class="m2" data-anim="fadeInUp"><img src="assets/img/g-dos-manos.jpg" alt="Persona mordiendo una hamburguesa con las dos manos" loading="lazy"></li>
+          <li class="m3" data-anim="fadeInRight" data-anim-mobile="fadeInUp"><img src="assets/img/b-cortada.jpg" alt="Hamburguesa cortada al medio mostrando la carne" loading="lazy"></li>
+          <li class="m4" data-anim="fadeInLeft" data-anim-mobile="fadeInUp"><img src="assets/img/p-bowl.jpg" alt="Bowl de papas fritas especiadas" loading="lazy"></li>
+          <li class="m5" data-anim="fadeInUp"><img src="assets/img/c-brindis.jpg" alt="Brindis con pintas de cerveza bajo luces de colores" loading="lazy"></li>
+          <li class="m6" data-anim="fadeInUp"><img src="assets/img/b-hongos.jpg" alt="Hamburguesa con hongos, queso y salsa" loading="lazy"></li>
+          <li class="m7" data-anim="fadeInRight" data-anim-mobile="fadeInUp"><img src="assets/img/b-cebolla-crispy.jpg" alt="Hamburguesa con cebolla crispy y papas en plato de colores" loading="lazy"></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- BLOG -->
+    <section class="bitacora">
+      <div class="contenedor bitacora__grilla">
+        <div data-anim="fadeInLeft" data-anim-mobile="fadeInUp">
+          <p class="rotulo">Bitácora</p>
+          <h2 class="titulo">Desde<br>la cocina</h2>
+          <a href="blog.html" class="enlace-flecha">Todas las notas</a>
+        </div>
+        <article class="nota nota--horizontal" data-anim="fadeInRight" data-anim-mobile="fadeInUp">
+          <img src="assets/img/b-noche-papas.jpg" alt="Hamburguesa con panceta y papas fritas en plato blanco" loading="lazy" width="1024" height="768">
+          <div class="nota__cuerpo">
+            <p class="nota__meta">10 de julio de 2025 · 4 min</p>
+            <h3 class="nota__titulo"><a href="articulo-hamburguesa-de-autor.html">La hamburguesa de autor, en serio</a></h3>
+            <p>Qué hace distinta a una smash bien hecha: la carne, la plancha, el pan y la paciencia de no apretar de más.</p>
+          </div>
+        </article>
+      </div>
     </section>
   </main>
 
-  <section class="leyenda">
-    <div class="contenedor">
-      <h2 class="titulo-rudo titulo-rudo--versalitas">El Origen de la Hamburguesa</h2>
-      <p>Desde el sur, un puñado de inconformistas del sabor se animó a cambiar las reglas.<br>Con fuego en el pecho y ganas de hacer algo auténtico, crearon hamburguesas como ninguna otra.<br>Hoy esa misión sigue en marcha.</p>
-      <a href="trabaja-con-nosotros.html" class="boton boton--claro boton--redondeado">Sumate a la tripulación →</a>
+  <section class="cierre" style="--fondo:url('assets/img/m-muelle-luces.jpg')">
+    <div class="contenedor cierre__grilla">
+      <h2 class="cierre__titulo" data-anim="fadeInLeft" data-anim-mobile="fadeInUp">Te esperamos<br>en el muelle</h2>
+      <div class="cierre__texto" data-anim="fadeInRight" data-anim-mobile="fadeInUp">
+        <p>Plancha caliente desde el mediodía hasta tarde. Vení con hambre, pedí una doble y quedate a la segunda pinta.</p>
+        <div class="cierre__botones">
+          <a href="carta.html" class="boton boton--amarillo">Ver la carta completa</a>
+          <a href="franquicias.html" class="boton boton--linea-clara">Quiero una franquicia</a>
+        </div>
+      </div>
     </div>
   </section>
 
   <footer class="pie">
-    <div class="contenedor">
-      <span class="logo logo--pie flota-hover" role="img" aria-label="El Muelle">
+    <div class="contenedor pie__grilla">
+      <div class="pie__marca">
+        <a href="index.html" class="logo logo--pie" aria-label="El Muelle, inicio">
         <i class="fa-solid fa-anchor logo__ancla" aria-hidden="true"></i>
-        <span class="logo__nombre" aria-hidden="true"><small>El</small>Muelle</span>
-      </span>
-      <p class="pie__bajada">Nos gusta ofrecer una experiencia gastronómica distinta, donde el producto, el lugar y la atención van de la mano.<br>Gracias a quienes nos eligen, seguimos creciendo con el mismo sabor de siempre.<br>¡Vení y sumate a nuestra historia!</p>
-
-      <div class="pie__columnas">
-        <div class="pie__col">
-          <h2>Navegación</h2>
-          <ul>
+        <span class="logo__nombre"><small>El</small>Muelle</span>
+      </a>
+        <p>Hamburguesas smash hechas al momento, papas cortadas en casa y cerveza tirada. Una marca que empezó con una plancha y hoy suma locales franquiciados.</p>
+        <ul class="redes" aria-label="Redes sociales">
+          <li><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a></li>
+          <li><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+          <li><a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a></li>
+        </ul>
+      </div>
+      <div class="pie__col">
+        <h2>Navegación</h2>
+        <ul>
             <li><a href="index.html">Inicio</a></li>
-            <li><a href="nosotros.html">Nosotros</a></li>
             <li><a href="carta.html">Carta</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="franquicias.html">Franquicias</a></li>
             <li><a href="blog.html">Blog</a></li>
             <li><a href="prensa.html">Prensa</a></li>
             <li><a href="contacto.html">Contacto</a></li>
-          </ul>
-        </div>
-        <div class="pie__col">
-          <h2>Información</h2>
-          <ul>
-            <li><a href="franquicias.html">Sumate a la franquicia</a></li>
-            <li><a href="trabaja-con-nosotros.html">Trabajá con nosotros</a></li>
-            <li><a href="nosotros.html#marcas">Sobre Smash Co.</a></li>
-            <li><a href="nosotros.html#marcas">Sobre Papas &amp; Go</a></li>
-          </ul>
-          <ul class="redes redes--pie" aria-label="Redes sociales">
-            <li><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a></li>
-        <li><a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a></li>
-        <li><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
-        <li><a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a></li>
-          </ul>
-        </div>
-        <div class="pie__marcas">
-          <div class="pie__marcas-logos" aria-hidden="true">
-            <span class="submarca submarca--smash">Smash<br>Co.</span>
-            <span class="submarca submarca--papas">Papas<br>&amp; Go</span>
-          </div>
-          <p>Nuestro grupo gastronómico suma marcas que comparten la misma pasión por la comida bien hecha.</p>
-        </div>
+        </ul>
+      </div>
+      <div class="pie__col">
+        <h2>La marca</h2>
+        <ul>
+          <li><a href="franquicias.html">Sumá tu franquicia</a></li>
+          <li><a href="trabaja-con-nosotros.html">Trabajá con nosotros</a></li>
+          <li><a href="carta.html#bebidas">La barra</a></li>
+          <li><a href="creditos.html">Créditos de fotos</a></li>
+        </ul>
+      </div>
+      <div class="pie__col pie__col--placa">
+        <h2>Bitácora</h2>
+        <dl class="placa placa--oscura">
+          <div><dt>Plancha</dt><dd>Smash, 2 × 100 g</dd></div>
+          <div><dt>Pan</dt><dd>De papa, del día</dd></div>
+          <div><dt>Papas</dt><dd>Cortadas en casa</dd></div>
+          <div><dt>Canillas</dt><dd>Rubia · Roja · IPA</dd></div>
+        </dl>
       </div>
     </div>
-    <div class="pie__legal contenedor">© Copyright El Muelle / <a href="privacidad.html">Política de privacidad y cookies</a></div>
+    <div class="contenedor pie__legal">
+      <span>© El Muelle</span>
+      <a href="privacidad.html">Privacidad y cookies</a>
+      <a href="creditos.html">Créditos de fotos</a>
+    </div>
   </footer>
 
-  <a href="#arriba" class="arriba" aria-label="Volver arriba"><i class="fa-solid fa-chevron-up" aria-hidden="true"></i></a>
+  <a href="#arriba" class="arriba" aria-label="Volver arriba"><i class="fa-solid fa-arrow-up" aria-hidden="true"></i></a>
 
   <script src="main.js"></script>
 </body>

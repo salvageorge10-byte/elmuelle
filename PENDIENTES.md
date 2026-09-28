@@ -1,25 +1,28 @@
-# Pendientes antes de publicar
+# El Muelle — rediseño
 
-Esta réplica copia la estructura, los efectos y las fotos de eldesembarco.com. Tiene 10 páginas: inicio, nosotros, carta, franquicias, blog, un artículo, prensa, contacto, trabajá con nosotros y privacidad. No tiene sucursales, direcciones ni mapas.
+Sitio de muestra de una hamburguesería con franquicias. Dirección visual: **señalética de puerto** (azul puerto, papel kraft, rojo señal, amarillo seguridad; Big Shoulders + Archivo + IBM Plex Mono). Mantiene los efectos del sitio anterior: entradas desde los costados y desde abajo (1,25 s), tira de fotos continua, fondos fijos al scrollear y fotos que flotan.
 
 ## Cómo editar
 
-- **Cabecera, bloque "El origen" y pie** están en `construir.py` (se repiten en todas las páginas).
-- **El contenido de cada página** está en `fuente/<página>.html`.
-- **La carta** (productos, precios, descripciones y fotos) está en `assets/js/carta-datos.js`. La página se arma sola a partir de ese archivo.
-- Después de tocar `construir.py` o algo de `fuente/`, correr `python construir.py` para regenerar las páginas.
+- **Cabecera, cierre y pie** (se repiten en todas las páginas): `construir.py`.
+- **Contenido de cada página**: `fuente/<página>.html`.
+- **Carta** (productos, precios, descripciones, foto de cada categoría): `assets/js/carta-datos.js`.
+- Después de tocar `construir.py` o `fuente/`, correr `python construir.py`.
 
-## Lo que hay que reemplazar
+## Fotos
 
-1. **Nombre y logo.** "El Muelle" y el ancla son provisorios: el nombre se cambia en `construir.py` (variable `MARCA` y la función `logo`) y en los textos de `fuente/`.
-2. **Fotos.** Todas son del sitio original. **Varias de la carta tienen el logo de El Desembarco impreso** (vasos de tragos, cervezas y latas): esas hay que cambiarlas sí o sí. La lista de la home está en `IMAGENES.md`; las de la carta están en `assets/img/carta/`.
-3. **Carta.** Los productos y los **precios son los del original**. Se cambiaron los nombres propios (Bajoncito → Ancla, Normandía → Tormenta, etc.) y se reescribieron las descripciones, pero hay que cargar los productos y precios reales en `assets/js/carta-datos.js`.
-4. **Cifras** (inicio): 50 locales, 700.456 hamburguesas, 97%, 504.007 pedidos y +1,5M de seguidores son **datos de El Desembarco**.
-5. **Historia y datos de "Nosotros" y "Franquicias"**: 2017, 50 franquicias, meta de 70 locales y 200 franquicias para 2027, centro de producción y flota de camiones son **datos del original**.
-6. **Submarcas** ("Smash Co." y "Papas & Go"): son inventadas para ocupar el lugar de Mr. Tasty y Mila & Go. Aparecen en el pie y en Nosotros. Reemplazarlas o sacarlas.
-7. **Formularios** (franquicias, contacto y trabajá con nosotros): validan todo, pero **todavía no envían a ningún lado**. Hay que conectar un servicio (por ejemplo Formspree) y poner su dirección en `ENVIO_FORMULARIOS`, en `main.js`. Mientras tanto, al enviar muestran un aviso de que falta conectarlo.
-8. **Redes sociales.** Los íconos apuntan a `#`: faltan los links reales.
-9. **Opiniones.** El espacio debajo del título es para el widget de reseñas de Google de la marca.
-10. **Franquicias.** En el original hay un video de YouTube de ellos; acá va una foto en su lugar. Si la marca tiene video, se pone ahí.
-11. **Política de privacidad.** Es un texto de referencia: revisarlo con un abogado antes de publicar.
-12. **Fuentes.** Las del original son pagas (A Love of Thunder, Avenir). Se reemplazaron por Rubik Dirt y Nunito Sans, que son gratuitas.
+Todas son fotos con licencia **Creative Commons** sacadas de Openverse (Flickr y otros). **Ninguna es de El Desembarco.** La página `creditos.html` lista autor, obra original y licencia de cada una, y está enlazada desde el pie: **no la borres mientras uses estas fotos**, porque las licencias CC BY y CC BY-SA exigen citar al autor. Siete fotos son CC BY-ND (sin obras derivadas): se muestran recortadas por el diseño, pero no se les aplicaron filtros ni retoques.
+
+Cuando la marca tenga fotos propias, se reemplazan manteniendo el nombre del archivo, y se sacan de `creditos.html`.
+
+## Datos de muestra que hay que reemplazar
+
+1. **Nombre y logo.** "El Muelle" es provisorio: variable `MARCA` y función `logo` en `construir.py`, más los textos de `fuente/`.
+2. **Cifras** del inicio (50 locales, 700.456 hamburguesas, 504.007 pedidos, 97 %, +1,5 M): son de referencia.
+3. **Historia y línea de tiempo** de Nosotros (2017, 2019, 2021, +50 locales, centro de producción): son de muestra.
+4. **Submarcas** "Smash Co." y "Papas & Go" en Nosotros: inventadas, reemplazar o quitar.
+5. **Carta y precios**: los productos y precios son de referencia.
+6. **Frases operativas**: "Plancha caliente desde el mediodía hasta tarde" (cierre) y "Pedidos y reservas por redes" (franja superior). Ajustarlas a los horarios y canales reales.
+7. **Formularios** (franquicias, contacto, trabajá con nosotros): validan, pero **no envían a ningún lado**. Poner la dirección del servicio (por ejemplo Formspree) en `ENVIO_FORMULARIOS`, en `main.js`.
+8. **Redes sociales**: los íconos apuntan a `#`.
+9. **Política de privacidad**: texto de referencia, revisarlo con un abogado.

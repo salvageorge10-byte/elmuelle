@@ -1,26 +1,35 @@
-<!-- Carta – El Muelle | Hamburguesas simples, dobles y triples, veggies, milanesas, entradas, cervezas y tragos. | assets/js/carta-datos.js, assets/js/carta.js -->
-    <section class="pagina-hero pagina-hero--carta" style="--fondo:url('assets/img/carrusel-5.webp')">
-      <div class="contenedor">
-        <span class="etiqueta" data-anim="fadeInUp">Sabor genuino, sin vueltas</span>
-        <h1 class="titulo-rudo pagina-hero__titulo" data-anim="fadeInUp">Carta</h1>
-        <p data-anim="fadeInUp">Todo lo que ves acá está hecho con ingredientes de primera, pan de receta propia, sin conservantes y con combinaciones que dan ganas de probar. Elegí tu próxima hamburguesa favorita y dejate sorprender.</p>
+<!-- Carta – El Muelle | Smash simples, dobles y triples, veggies, milanesas, entradas, cerveza tirada y tragos. | assets/js/carta-datos.js, assets/js/carta.js -->
+    <section class="cabeza">
+      <div class="contenedor cabeza__grilla">
+        <div data-anim="fadeInLeft" data-anim-mobile="fadeInUp">
+          <p class="cabeza__miga"><a href="index.html">Inicio</a> / Carta</p>
+          <h1 class="cabeza__titulo">La carta<br><span>completa</span></h1>
+          <p class="cabeza__bajada">Carne aplastada en la plancha, pan de papa del día y nada de conservantes. Buscá lo que tenés ganas de comer o saltá directo a una categoría.</p>
+        </div>
+        <figure class="cabeza__foto" data-anim="fadeInRight" data-anim-mobile="fadeInUp">
+          <img src="assets/img/b-plato-negro.jpg" alt="Hamburguesa con cebolla y papas fritas en plato oscuro" width="1024" height="768">
+        </figure>
       </div>
     </section>
 
-    <div class="carta-panel">
-      <div class="buscador contenedor" data-anim="fadeInUp">
-        <div class="buscador__campo">
-          <label for="buscar" class="buscador__titulo">Buscador</label>
-          <input id="buscar" type="search" placeholder="Buscá una hamburguesa o un trago…" autocomplete="off">
-        </div>
-        <div class="buscador__categorias">
-          <button type="button" class="buscador__boton" aria-expanded="false" aria-controls="lista-categorias">Categorías <i class="fa-solid fa-caret-down" aria-hidden="true"></i></button>
-          <ul id="lista-categorias" class="buscador__lista" hidden></ul>
+    <div class="carta-herramientas">
+      <div class="contenedor">
+        <div class="carta-herramientas__caja" data-anim="fadeInUp">
+          <div class="buscador">
+            <label for="buscar"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i><span class="visualmente-oculto">Buscar en la carta</span></label>
+            <input id="buscar" type="search" placeholder="Buscá: cheddar, milanesa, IPA…" autocomplete="off">
+          </div>
+          <nav class="chips" aria-label="Categorías de la carta"></nav>
         </div>
       </div>
-
-      <div class="contenedor" id="carta-productos">
-        <noscript><p>Para ver la carta necesitás tener JavaScript activado.</p></noscript>
-      </div>
-      <p class="carta-vacia contenedor" hidden>No encontramos nada con esa búsqueda. Probá con otra palabra, por ejemplo «cheddar» o «milanesa».</p>
     </div>
+
+    <section class="carta">
+      <div class="contenedor">
+        <div id="carta-productos">
+          <noscript><p>Para ver la carta necesitás tener JavaScript activado.</p></noscript>
+        </div>
+        <p class="carta-vacia" hidden>No encontramos nada con esa búsqueda. Probá con otra palabra, por ejemplo «cheddar» o «milanesa».</p>
+        <p class="carta-nota">Precios en pesos argentinos. Pueden cambiar sin previo aviso.</p>
+      </div>
+    </section>

@@ -23,8 +23,8 @@ conAnimacion.forEach((el) => {
   observador.observe(el);
 });
 
-// Carrusel continuo: se duplican las fotos para que el recorrido no tenga corte.
-const pista = document.querySelector('.carrusel__pista');
+// Tira de fotos continua: se duplican las fotos para que el recorrido no tenga corte.
+const pista = document.querySelector('.tira__pista');
 if (pista) {
   const fotos = [...pista.children];
   pista.style.setProperty('--cantidad', fotos.length);
@@ -49,7 +49,6 @@ botonMenu.addEventListener('click', () => {
   const abierto = nav.classList.toggle('abierta');
   botonMenu.setAttribute('aria-expanded', abierto);
   botonMenu.setAttribute('aria-label', abierto ? 'Cerrar menú' : 'Abrir menú');
-  botonMenu.firstElementChild.className = abierto ? 'fa-solid fa-xmark' : 'fa-solid fa-bars';
 });
 nav.addEventListener('click', (e) => {
   if (e.target.closest('a') && nav.classList.contains('abierta')) botonMenu.click();
