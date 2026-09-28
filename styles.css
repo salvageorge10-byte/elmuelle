@@ -161,7 +161,7 @@ button, input, textarea { font: inherit; color: inherit; }
 .muelle:hover img { transform: scale(1.06); }
 .muelle--grande { grid-row: span 2; }
 .muelle--ancho { grid-column: span 2; }
-.muelle__cartel { position: absolute; z-index: 2; left: 28px; right: 28px; bottom: 26px; display: grid; grid-template-columns: auto 1fr; column-gap: 18px; align-items: end; }
+.muelle__cartel { position: absolute; z-index: 2; left: 28px; right: 28px; bottom: 26px; display: grid; align-items: end; }
 .muelle__letra { grid-row: span 2; font: 400 64px/.8 var(--f-rudo); color: var(--bronce-claro); }
 .muelle__nombre { font: 800 24px/1.05 var(--f-titulo); text-transform: uppercase; letter-spacing: .02em; color: var(--marfil); }
 .muelle__dato { margin-top: 6px; font: 500 11px/1.3 var(--f-mono); letter-spacing: .18em; text-transform: uppercase; color: var(--marfil-3); }
